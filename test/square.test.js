@@ -1,5 +1,5 @@
 const assert = require('assert')
-const Square = require('../square')
+const Square = require('../Js/square')
 
 describe('Square', () => {
 
@@ -61,7 +61,74 @@ describe('Square', () => {
       assert.equal(result, expected)
     })
 
-
   })
 
+  describe('setSide', () => {
+
+    it('Should return 5 when is setted with a side of 5', () => {
+      const data = new Square()
+      data.side = 5
+      const result = data.side
+      const expected = 5
+      assert.equal(result, expected)
+    })
+
+    it('Should return 6.27 when is setted with a side of 6.27', () => {
+      const data = new Square()
+      data.side = 6.27
+      const result = data.side
+      const expected = 6.27
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is setted with a side of -1', () => {
+      const data = new Square()
+      data.side = -1
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is setted with a character', () => {
+      const data = new Square()
+      data.side = 'a'
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is setted with a true valor', () => {
+      const data = new Square()
+      data.side = true
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is setted with a false valor', () => {
+      const data = new Square()
+      data.side = false
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is setted with a object', () => {
+      const data = new Square()
+      data.side = {}
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is setted with a array', () => {
+      const data = new Square()
+      data.side = []
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+  })
+  
 })
