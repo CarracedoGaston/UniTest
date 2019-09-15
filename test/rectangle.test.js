@@ -20,6 +20,7 @@ describe('Rectangle', () => {
     })
 
   })
+
   describe('getWidth', () => {
 
     it('Should return 0 && 5 when created with a undefined height and a width of 5', () => {
@@ -27,6 +28,13 @@ describe('Rectangle', () => {
     const result = [data.height, data.width]
     const expected = [0, 5]
     assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 6.27 when created with a undefined height and a width of 6.27', () => {
+      const data = new Rectangle(undefined, 6.27)
+      const result = [data.height, data.width]
+      const expected = [0, 6.27]
+      assert.deepEqual(result, expected)
     })
 
     it('Should return 0 && 0 when created with a undefined height and a width of -1', () => {
@@ -82,6 +90,13 @@ describe('Rectangle', () => {
       assert.deepEqual(result, expected)
       })
   
+      it('Should return 6.27 && 0 when created with a height of 6.27 and a undefined width', () => {
+        const data = new Rectangle(6.27, undefined)
+        const result = [data.height, data.width]
+        const expected = [6.27, 0]
+        assert.deepEqual(result, expected)
+      })
+
       it('Should return 0 && 0 when created with a height of -1 and a undefined width', () => {
         const data = new Rectangle(-1, undefined)
         const result = [data.height, data.width]
