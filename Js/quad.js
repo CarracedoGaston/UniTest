@@ -19,7 +19,6 @@ class Quad {
 
   set width(value) {
     this._width = (value >= 0 && typeof(value) == 'number')? value : 0
-    this._width = parseFloat(value)
   }
 
   get width() {
