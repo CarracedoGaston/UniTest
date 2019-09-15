@@ -141,4 +141,73 @@ describe('Quad', () => {
 
   })
 
+  describe('setWidth', () => {
+
+    it('Should return 5 when is setted with a width of 5', () => {
+      const data = new Quad()
+      data.width = 5
+      const result = data.width
+      const expected = 5
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 6.27 when is setted with a width of 6.27', () => {
+      const data = new Quad()
+      data.width = 6.27
+      const result = data.width
+      const expected = 6.27
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a width of -1', () => {
+      const data = new Quad()
+      data.width = -1
+      const result = data.width
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a width an character', () => {
+      const data = new Quad()
+      data.width = 'a'
+      const result = data.width
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a width of a true valor', () => {
+      const data = new Quad()
+      data.width = true
+      const result = data.width
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a width of a false valor', () => {
+      const data = new Quad()
+      data.width = false
+      const result = data.width
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a width of an object', () => {
+      const data = new Quad()
+      data.width = {}
+      const result = data.width
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a width of an array', () => {
+      const data = new Quad()
+      data.width = []
+      const result = data.width
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+  })
+
+
 })
