@@ -3,6 +3,24 @@ const Quad = require('../Js/quad')
 
 describe('Quad', () => {
 
+  describe('getWidth && getHeight', () => {
+
+    it('Should return 0 && 0 when created without width and height', () => {
+      const data = new Quad()
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when created with an undefined width height', () => {
+      const data = new Quad(undefined, undefined)
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+  })
+
   describe('getWidth', () => {
 
     it('Should return 0 && 5 when created with a undefined height and a width of 5', () => {
