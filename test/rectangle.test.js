@@ -143,67 +143,67 @@ describe('Rectangle', () => {
 
   describe('setWidth', () => {
 
-    it('Should return 0 && 5 when is setted with a width of 5', () => {
+    it('Should return 5 when is setted with a width of 5', () => {
       const data = new Rectangle()
       data.width = 5
-      const result = [data.height, data.width]
-      const expected = [0, 5]
+      const result = data.width
+      const expected = 5
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 6.27 when is setted with a width of 6.27', () => {
+    it('Should return 6.27 when is setted with a width of 6.27', () => {
       const data = new Rectangle()
       data.width = 6.27
-      const result = [data.height, data.width]
-      const expected = [0, 6.27]
+      const result = data.width
+      const expected = 6.27
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a width of -1', () => {
+    it('Should return 0 when is setted with a width of -1', () => {
       const data = new Rectangle()
       data.width = -1
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.width
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a width an character', () => {
+    it('Should return 0 when is setted with a width an character', () => {
       const data = new Rectangle()
       data.width = 'a'
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.width
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a width of a true valor', () => {
+    it('Should return 0 when is setted with a width of a true valor', () => {
       const data = new Rectangle()
       data.width = true
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.width
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a width of a false valor', () => {
+    it('Should return 0 when is setted with a width of a false valor', () => {
       const data = new Rectangle()
       data.width = false
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.width
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a width of an object', () => {
+    it('Should return 0 when is setted with a width of an object', () => {
       const data = new Rectangle()
       data.width = {}
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.width
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a width of an array', () => {
+    it('Should return 0 when is setted with a width of an array', () => {
       const data = new Rectangle()
       data.width = []
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.width
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
@@ -211,67 +211,67 @@ describe('Rectangle', () => {
 
   describe('setHeight', () => {
 
-    it('Should return 5 && 0 when is setted with a height of 5', () => {
+    it('Should return 5 when is setted with a height of 5', () => {
       const data = new Rectangle()
       data.height = 5
-      const result = [data.height, data.width]
-      const expected = [5, 0]
+      const result = data.height
+      const expected = 5
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 6.27 && 0 when is setted with a height of 6.27', () => {
+    it('Should return 6.27 when is setted with a height of 6.27', () => {
       const data = new Rectangle()
       data.height = 6.27
-      const result = [data.height, data.width]
-      const expected = [6.27, 0]
+      const result = data.height
+      const expected = 6.27
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a height of -1', () => {
+    it('Should return 0 when is setted with a height of -1', () => {
       const data = new Rectangle()
       data.height = -1
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.height
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a height an character', () => {
+    it('Should return 0 when is setted with a height an character', () => {
       const data = new Rectangle()
       data.height = 'a'
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.height
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a height of a true valor', () => {
+    it('Should return 0 when is setted with a height of a true valor', () => {
       const data = new Rectangle()
       data.height = true
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.height
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a height of a false valor', () => {
+    it('Should return 0 when is setted with a height of a false valor', () => {
       const data = new Rectangle()
       data.height = false
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.height
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a height of an object', () => {
+    it('Should return 0 when is setted with a height of an object', () => {
       const data = new Rectangle()
       data.height = {}
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.height
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when is setted with a height of an array', () => {
+    it('Should return 0 when is setted with a height of an array', () => {
       const data = new Rectangle()
       data.height = []
-      const result = [data.height, data.width]
-      const expected = [0, 0]
+      const result = data.height
+      const expected = 0
       assert.deepEqual(result, expected)
     })
 
