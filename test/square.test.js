@@ -61,14 +61,14 @@ describe('Square', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when created with a object', () => {
+    it('Should return 0 when created with an object', () => {
       const data = new Square({})
       const result = data.side
       const expected = 0
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when created with a array', () => {
+    it('Should return 0 when created with an array', () => {
       const data = new Square([])
       const result = data.side
       const expected = 0
@@ -127,7 +127,7 @@ describe('Square', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a object', () => {
+    it('Should return 0 when is setted with an object', () => {
       const data = new Square()
       data.side = {}
       const result = data.side
@@ -135,7 +135,7 @@ describe('Square', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a array', () => {
+    it('Should return 0 when is setted with an array', () => {
       const data = new Square()
       data.side = []
       const result = data.side
