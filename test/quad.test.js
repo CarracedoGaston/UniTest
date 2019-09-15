@@ -65,14 +65,14 @@ describe('Quad', () => {
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when created with a undefined height and a width of a true valor', () => {
+    it('Should return 0 && 0 when created with a undefined height and a width of a true value', () => {
       const data = new Quad(undefined, true)
       const result = [data.height, data.width]
       const expected = [0, 0]
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when created with a undefined height and a width of a false valor', () => {
+    it('Should return 0 && 0 when created with a undefined height and a width of a false value', () => {
       const data = new Quad(undefined, false)
       const result = [data.height, data.width]
       const expected = [0, 0]
@@ -125,14 +125,14 @@ describe('Quad', () => {
       assert.deepEqual(result, expected)
     })
   
-    it('Should return 0 && 0 when created with a height of a true valor and a undefined width', () => {
+    it('Should return 0 && 0 when created with a height of a true value and a undefined width', () => {
       const data = new Quad(true, undefined)
       const result = [data.height, data.width]
       const expected = [0, 0]
       assert.deepEqual(result, expected)
     })
   
-    it('Should return 0 && 0 when created with a height of false valor and a undefined width', () => {
+    it('Should return 0 && 0 when created with a height of false value and a undefined width', () => {
       const data = new Quad(false, undefined)
       const result = [data.height, data.width]
       const expected = [0, 0]
@@ -260,7 +260,7 @@ describe('Quad', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a width of a true valor', () => {
+    it('Should return 0 when is setted with a width of a true value', () => {
       const data = new Quad()
       data.width = true
       const result = data.width
@@ -268,7 +268,7 @@ describe('Quad', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a width of a false valor', () => {
+    it('Should return 0 when is setted with a width of a false value', () => {
       const data = new Quad()
       data.width = false
       const result = data.width
@@ -328,7 +328,7 @@ describe('Quad', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a height of a true valor', () => {
+    it('Should return 0 when is setted with a height of a true value', () => {
       const data = new Quad()
       data.height = true
       const result = data.height
@@ -336,7 +336,7 @@ describe('Quad', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a height of a false valor', () => {
+    it('Should return 0 when is setted with a height of a false value', () => {
       const data = new Quad()
       data.height = false
       const result = data.height

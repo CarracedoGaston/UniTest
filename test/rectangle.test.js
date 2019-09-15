@@ -65,14 +65,14 @@ describe('Rectangle', () => {
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when created with a undefined height and a width of a true valor', () => {
+    it('Should return 0 && 0 when created with a undefined height and a width of a true value', () => {
       const data = new Rectangle(undefined, true)
       const result = [data.height, data.width]
       const expected = [0, 0]
       assert.deepEqual(result, expected)
     })
 
-    it('Should return 0 && 0 when created with a undefined height and a width of a false valor', () => {
+    it('Should return 0 && 0 when created with a undefined height and a width of a false value', () => {
       const data = new Rectangle(undefined, false)
       const result = [data.height, data.width]
       const expected = [0, 0]
@@ -125,14 +125,14 @@ describe('Rectangle', () => {
       assert.deepEqual(result, expected)
     })
   
-    it('Should return 0 && 0 when created with a height of a true valor and a undefined width', () => {
+    it('Should return 0 && 0 when created with a height of a true value and a undefined width', () => {
       const data = new Rectangle(true, undefined)
       const result = [data.height, data.width]
       const expected = [0, 0]
       assert.deepEqual(result, expected)
     })
   
-    it('Should return 0 && 0 when created with a height of false valor and a undefined width', () => {
+    it('Should return 0 && 0 when created with a height of false value and a undefined width', () => {
       const data = new Rectangle(false, undefined)
       const result = [data.height, data.width]
       const expected = [0, 0]
@@ -175,7 +175,7 @@ describe('Rectangle', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a width of a true valor', () => {
+    it('Should return 0 when is setted with a width of a true value', () => {
       const data = new Rectangle()
       data.width = true
       const result = data.width
@@ -183,7 +183,7 @@ describe('Rectangle', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a width of a false valor', () => {
+    it('Should return 0 when is setted with a width of a false value', () => {
       const data = new Rectangle()
       data.width = false
       const result = data.width
@@ -243,7 +243,7 @@ describe('Rectangle', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a height of a true valor', () => {
+    it('Should return 0 when is setted with a height of a true value', () => {
       const data = new Rectangle()
       data.height = true
       const result = data.height
@@ -251,7 +251,7 @@ describe('Rectangle', () => {
       assert.equal(result, expected)
     })
 
-    it('Should return 0 when is setted with a height of a false valor', () => {
+    it('Should return 0 when is setted with a height of a false value', () => {
       const data = new Rectangle()
       data.height = false
       const result = data.height
