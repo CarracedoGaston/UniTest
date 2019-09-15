@@ -145,4 +145,71 @@ describe('Square', () => {
 
   })
 
+  describe('Area', () => {
+
+    it('Should return 25 when is created with a side of 5', () => {
+      const data = new Square(5)
+      const result = data.area()
+      const expected = 25
+      assert.equal(result, expected)
+    })
+
+    it('Should return 6.25 when is created with a side of 2.5', () => {
+      const data = new Square(2.5)
+      const result = data.area()
+      const expected = 6.25
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a side of 0', () => {
+      const data = new Square(0)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a undefined side', () => {
+      const data = new Square(undefined)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with side a character', () => {
+      const data = new Square('a')
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with side of an object', () => {
+      const data = new Square({})
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with side of an array', () => {
+      const data = new Square([])
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with side of an true value', () => {
+      const data = new Square(true)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with side of an false value', () => {
+      const data = new Square(false)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+  })
+
 })
