@@ -361,5 +361,100 @@ describe('Rectangle', () => {
     })
 
   })
-  
+
+  describe('Area', () => {
+
+    it('Should return 25 when is created with a height and witdh of 5', () => {
+      const data = new Rectangle(5, 5)
+      const result = data.area()
+      const expected = 25
+      assert.equal(result, expected)
+    })
+
+    it('Should return 12.5 when is created with a height of 2.5 and witdh of 5', () => {
+      const data = new Rectangle(2.5, 5)
+      const result = data.area()
+      const expected = 12.5
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of 5 and witdh of 0', () => {
+      const data = new Rectangle(5, 0)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of 5 and witdh of undefined', () => {
+      const data = new Rectangle(5, undefined)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of undefined and witdh of 5', () => {
+      const data = new Rectangle(undefined, 5)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of 0 and witdh of 5', () => {
+      const data = new Rectangle(0, 5)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of undefined and witdh of undefined', () => {
+      const data = new Rectangle(undefined, undefined)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of 5 and witdh of a character', () => {
+      const data = new Rectangle(5, 'a')
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of "a" and witdh of undefined', () => {
+      const data = new Rectangle('a', undefined)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of an object and witdh of an array', () => {
+      const data = new Rectangle({}, [])
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of an object and witdh of an true value', () => {
+      const data = new Rectangle({}, undefined)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of true value and witdh of false value', () => {
+      const data = new Rectangle(true, false)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+    
+    it('Should return 0 when is created with a height of 5 and witdh of undefined', () => {
+      const data = new Rectangle(5, undefined)
+      const result = data.area()
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+  })
+
 })

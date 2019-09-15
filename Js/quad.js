@@ -25,12 +25,14 @@ class Quad {
     return this._width
   }
 
-  get area() {
+  area() {
     return this._width * this._height
   }
 
   calculatePerimeter() {
-    return (this._width * 2) + (this._height * 2)
+    if (this._width == 0) return 0
+    if (this._height == 0) return 0 
+    else return (this._width * 2) + (this._height * 2)
   }
 
 }
