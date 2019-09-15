@@ -141,6 +141,91 @@ describe('Quad', () => {
 
   })
 
+  describe('setWidth && setHeight', () => {
+
+    it('Should return 0 && 0 when is setted with a undefined height and width', () => {
+      const data = new Quad()
+      data.height = undefined
+      data.width = undefined
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 5 && 5 when is setted with a height of 5 and a width of 5', () => {
+      const data = new Quad()
+      data.height = 5
+      data.width = 5
+      const result = [data.height, data.width]
+      const expected = [5, 5]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 6.27 && 6.27 when is setted with a height of 6.27 and a width of 6.27', () => {
+      const data = new Quad()
+      data.height = 6.27
+      data.width = 6.27
+      const result = [data.height, data.width]
+      const expected = [6.27, 6.27]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when is setted with a height of -1 and a width of -1', () => {
+      const data = new Quad()
+      data.height = -1
+      data.width = -1
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when is setted with a height of "a" and a width of "a"', () => {
+      const data = new Quad()
+      data.height = 'a'
+      data.width = 'a'
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when is setted with a height of a true value and a width of a true value', () => {
+      const data = new Quad()
+      data.height = true
+      data.width = true
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when is setted with a height of a false value and a width of a false value', () => {
+      const data = new Quad()
+      data.height = false
+      data.width = false
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when is setted with a height of an object and a width of an object', () => {
+      const data = new Quad()
+      data.height = {}
+      data.width = {}
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when is setted with a height of an array and a width of an array', () => {
+      const data = new Quad()
+      data.height = []
+      data.width = []
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+  })
+
   describe('setWidth', () => {
 
     it('Should return 5 when is setted with a width of 5', () => {
