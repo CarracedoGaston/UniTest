@@ -5,6 +5,20 @@ describe('Square', () => {
 
   describe('getSide', () => {
 
+    it('Should return 0 when created without side', () => {
+      const data = new Square()
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when created with an undefined side', () => {
+      const data = new Square(undefined)
+      const result = data.side
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
     it('Should return 5 when created with a side of 5', () => {
       const data = new Square(5)
       const result = data.side
