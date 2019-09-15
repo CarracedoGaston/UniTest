@@ -3,6 +3,23 @@ const Rectangle = require('../Js/rectangle')
 
 describe('Rectangle', () => {
 
+  describe('getWidth && getHeight', () => {
+
+    it('Should return 0 && 0 when is created without width and height', () => {
+      const data = new Rectangle()
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 && 0 when is created with an undefined width height', () => {
+      const data = new Rectangle(undefined, undefined)
+      const result = [data.height, data.width]
+      const expected = [0, 0]
+      assert.deepEqual(result, expected)
+    })
+
+  })
   describe('getWidth', () => {
 
     it('Should return 0 && 5 when is created with a undefined height and a width of 5', () => {
