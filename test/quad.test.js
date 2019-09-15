@@ -209,5 +209,73 @@ describe('Quad', () => {
 
   })
 
+  describe('setHeight', () => {
+
+    it('Should return 5 when is setted with a height of 5', () => {
+      const data = new Quad()
+      data.height = 5
+      const result = data.height
+      const expected = 5
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 6.27 when is setted with a height of 6.27', () => {
+      const data = new Quad()
+      data.height = 6.27
+      const result = data.height
+      const expected = 6.27
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a height of -1', () => {
+      const data = new Quad()
+      data.height = -1
+      const result = data.height
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a height an character', () => {
+      const data = new Quad()
+      data.height = 'a'
+      const result = data.height
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a height of a true valor', () => {
+      const data = new Quad()
+      data.height = true
+      const result = data.height
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a height of a false valor', () => {
+      const data = new Quad()
+      data.height = false
+      const result = data.height
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a height of an object', () => {
+      const data = new Quad()
+      data.height = {}
+      const result = data.height
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+    it('Should return 0 when is setted with a height of an array', () => {
+      const data = new Quad()
+      data.height = []
+      const result = data.height
+      const expected = 0
+      assert.deepEqual(result, expected)
+    })
+
+  })
+
 
 })
