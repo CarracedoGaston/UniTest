@@ -4,14 +4,13 @@ class Quad {
     return (width * 2) + (height * 2)
   }
 
-  constructor(height = 0, width = 0) {
-    this._height = height
-    this._width = width
+  constructor(height, width) {
+    this._height = (height >= 0 && typeof(height) == ('number'))? height : 0
+    this._width = (width >= 0 && typeof(width) == ('number'))? width : 0  
   }
 
   set height(value) {
-    if (isNaN(value)) throw 'Height exptecs a number'
-    this._height = parseFloat(value)
+    this._height = (value >= 0 && typeof(value) == 'number')? value : 0
   }
 
   get height() {
@@ -19,7 +18,7 @@ class Quad {
   }
 
   set width(value) {
-    if (isNaN(value)) throw 'Width exptecs a number'
+    this._width = (value >= 0 && typeof(value) == 'number')? value : 0
     this._width = parseFloat(value)
   }
 
