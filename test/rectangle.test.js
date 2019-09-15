@@ -148,7 +148,7 @@ describe('Rectangle', () => {
       data.width = 5
       const result = data.width
       const expected = 5
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 6.27 when is setted with a width of 6.27', () => {
@@ -156,7 +156,7 @@ describe('Rectangle', () => {
       data.width = 6.27
       const result = data.width
       const expected = 6.27
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a width of -1', () => {
@@ -164,7 +164,7 @@ describe('Rectangle', () => {
       data.width = -1
       const result = data.width
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a width an character', () => {
@@ -172,7 +172,7 @@ describe('Rectangle', () => {
       data.width = 'a'
       const result = data.width
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a width of a true valor', () => {
@@ -180,7 +180,7 @@ describe('Rectangle', () => {
       data.width = true
       const result = data.width
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a width of a false valor', () => {
@@ -188,7 +188,7 @@ describe('Rectangle', () => {
       data.width = false
       const result = data.width
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a width of an object', () => {
@@ -196,7 +196,7 @@ describe('Rectangle', () => {
       data.width = {}
       const result = data.width
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a width of an array', () => {
@@ -204,7 +204,7 @@ describe('Rectangle', () => {
       data.width = []
       const result = data.width
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
   })
@@ -216,7 +216,7 @@ describe('Rectangle', () => {
       data.height = 5
       const result = data.height
       const expected = 5
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 6.27 when is setted with a height of 6.27', () => {
@@ -224,7 +224,7 @@ describe('Rectangle', () => {
       data.height = 6.27
       const result = data.height
       const expected = 6.27
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a height of -1', () => {
@@ -232,7 +232,7 @@ describe('Rectangle', () => {
       data.height = -1
       const result = data.height
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a height an character', () => {
@@ -240,7 +240,7 @@ describe('Rectangle', () => {
       data.height = 'a'
       const result = data.height
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a height of a true valor', () => {
@@ -248,7 +248,7 @@ describe('Rectangle', () => {
       data.height = true
       const result = data.height
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a height of a false valor', () => {
@@ -256,7 +256,7 @@ describe('Rectangle', () => {
       data.height = false
       const result = data.height
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a height of an object', () => {
@@ -264,7 +264,7 @@ describe('Rectangle', () => {
       data.height = {}
       const result = data.height
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
     it('Should return 0 when is setted with a height of an array', () => {
@@ -272,7 +272,7 @@ describe('Rectangle', () => {
       data.height = []
       const result = data.height
       const expected = 0
-      assert.deepEqual(result, expected)
+      assert.equal(result, expected)
     })
 
   })
