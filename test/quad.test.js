@@ -552,4 +552,78 @@ describe('Quad', () => {
     
   })
 
+  describe('Static Method CalculatePerimeter', () =>{
+
+    it('Should return 0 when is created with a height of 0 and with of 5', () => {
+      const data = [0, 5]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 20 when is created with a height and witdh of 5', () => {
+      const data = [5, 5]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 20
+      assert.equal(result, expected)
+    })
+
+    it('Should return 15 when is created with a height of 2.5 and witdh of 5', () => {
+      const data = [2.5, 5]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 15
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of undefined and witdh of 5', () => {
+      const data = [undefined, 5]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of undefined and witdh of undefined', () => {
+      const data = [undefined, undefined]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of 5 and witdh of a character', () => {
+      const data = [5, 'a']
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of "a" and witdh of undefined', () => {
+      const data = ['a', undefined]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of an object and witdh of an array', () => {
+      const data = [{}, []]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of an object and witdh of an true value', () => {
+      const data = [{}, undefined]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+
+    it('Should return 0 when is created with a height of true value and witdh of false value', () => {
+      const data = [true, false]
+      const result = Quad.CalculatePerimeter(...data)
+      const expected = 0
+      assert.equal(result, expected)
+    })
+    
+  })
+
 })
